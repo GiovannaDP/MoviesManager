@@ -3,11 +3,12 @@ package com.ifsp.giovanna.moviesmanager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ifsp.giovanna.moviesmanager.databinding.ActivityMainBinding
+import com.ifsp.giovanna.moviesmanager.databinding.ActivityMovieBinding
 
-class MainActivity : AppCompatActivity() {
+class MovieActivity : AppCompatActivity() {
 
-    private val amb: ActivityMainBinding by lazy{
-        ActivityMainBinding.inflate(layoutInflater)
+    private val amb: ActivityMovieBinding by lazy{
+        ActivityMovieBinding.inflate(layoutInflater)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
