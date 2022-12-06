@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/addMovieMi"
+        android:icon="@drawable/ic_add"
+        android:title="Add Movie"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/changeOrderNameMi"
+        android:icon="@drawable/ic_change"
+        android:title="Change order by Name" />
+
+    <item
+        android:id="@+id/changeOrderRateMi"
+        android:icon="@drawable/ic_change"
+        android:title="Change order by Rate" />
+</menu>

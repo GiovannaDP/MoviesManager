@@ -82,10 +82,10 @@ class MovieDaoSqlite(context: Context) : MovieDao {
     private fun Cursor.rowToMovie() = Movie(
         getInt(getColumnIndexOrThrow(ID_COLUMN)),
         getString(getColumnIndexOrThrow(NAME_COLUMN)),
-        getString(getColumnIndexOrThrow(YEAR_COLUMN)).toInt(),
+        getString(getColumnIndexOrThrow(YEAR_COLUMN)),
         getString(getColumnIndexOrThrow(STUDIO_COLUMN)),
         getString(getColumnIndexOrThrow(PRODUCER_COLUMN)),
-        getString(getColumnIndexOrThrow(TIME_COLUMN)).toInt(),
+        getString(getColumnIndexOrThrow(TIME_COLUMN)),
         getString(getColumnIndexOrThrow(WATCHED_COLUMN)).toBoolean(),
         getString(getColumnIndexOrThrow(RATE_COLUMN)).toInt(),
         getString(getColumnIndexOrThrow(GENDER_COLUMN)),
@@ -112,7 +112,7 @@ class MovieDaoSqlite(context: Context) : MovieDao {
     override fun retrieveMovies(): MutableList<Movie> {
         val movieList = mutableListOf<Movie>()
         val cursor = movieSqliteDatabase.rawQuery(
-            "SELECT * FROM ${MOVIE_TABLE}_TABLE ORDER BY $NAME_COLUMN",
+            "SELECT * FROM $MOVIE_TABLE ORDER BY $NAME_COLUMN",
             null
         )
         while (cursor.moveToNext()) {

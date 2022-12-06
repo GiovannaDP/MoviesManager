@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MovieActivity">
+    tools:context=".view.MovieActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -119,7 +121,7 @@
             />
 
         <TextView
-            android:id="@+id/GêneroTv"
+            android:id="@+id/generoTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Gênero"
@@ -130,7 +132,7 @@
             android:textColor="@color/black"/>
 
         <Spinner
-            android:id="@+id/GêneroSp"
+            android:id="@+id/generoSp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/border_rounded"
@@ -139,40 +141,61 @@
             android:minHeight="30dp"
             android:padding="5dp" />
 
-        <TextView
-            android:id="@+id/NotaTv"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nota"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/black"/>
+            android:orientation="horizontal">
 
-        <Spinner
-            android:id="@+id/NotaSp"
-            android:layout_width="wrap_content"
+            <CheckBox
+                android:id="@+id/assistidoCb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Já assisti"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:checked="false"
+                android:layout_margin="5dp" />
+
+            <LinearLayout
+                android:id="@+id/notaLl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:id="@+id/notaTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nota"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"/>
+
+                <Spinner
+                    android:id="@+id/notaSp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_rounded"
+                    android:layout_margin="5dp"
+                    android:entries="@array/nota"
+                    android:minHeight="35dp"
+                    android:minWidth="100dp"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/salvarBt"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/border_rounded"
-            android:layout_margin="5dp"
-            android:entries="@array/nota"
-            android:minHeight="30dp"
-            android:padding="5dp" />
-
-        <CheckBox
-            android:id="@+id/assistidoCb"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Já assisti"
-            android:checked="false"
-            android:layout_margin="5dp" />
-
-
-
-
-
+            android:text="Salvar filme"
+            android:layout_marginTop="20dp" />
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
