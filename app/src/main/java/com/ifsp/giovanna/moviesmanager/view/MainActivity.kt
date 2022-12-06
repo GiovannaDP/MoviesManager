@@ -10,13 +10,13 @@ import android.view.View
 import android.widget.AdapterView
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
-import com.ifsp.giovanna.moviesmanager.MovieController
+import com.ifsp.giovanna.moviesmanager.controller.MovieController
 import com.ifsp.giovanna.moviesmanager.R
 import com.ifsp.giovanna.moviesmanager.adapter.MovieAdapter
 import com.ifsp.giovanna.moviesmanager.databinding.ActivityMainBinding
 import com.ifsp.giovanna.moviesmanager.model.Constant.EXTRA_MOVIE
 import com.ifsp.giovanna.moviesmanager.model.Constant.VIEW_MOVIE
-import com.ifsp.giovanna.moviesmanager.model.Movie
+import com.ifsp.giovanna.moviesmanager.model.entity.Movie
 
 class MainActivity : AppCompatActivity() {
 

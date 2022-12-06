@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.ifsp.giovanna.moviesmanager.databinding.ActivityMovieBinding
 import com.ifsp.giovanna.moviesmanager.model.Constant.EXTRA_MOVIE
 import com.ifsp.giovanna.moviesmanager.model.Constant.VIEW_MOVIE
-import com.ifsp.giovanna.moviesmanager.model.Movie
+import com.ifsp.giovanna.moviesmanager.model.entity.Movie
 import java.util.*
 
 class MovieActivity : AppCompatActivity() {

@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
 import com.ifsp.giovanna.moviesmanager.R
-import com.ifsp.giovanna.moviesmanager.model.Movie
+import com.ifsp.giovanna.moviesmanager.model.entity.Movie
 
 class MovieAdapter(
     context: Context,

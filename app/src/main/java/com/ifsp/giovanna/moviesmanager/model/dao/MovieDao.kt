@@ -1,6 +1,6 @@
 package com.ifsp.giovanna.moviesmanager.model.dao
 
-import com.ifsp.giovanna.moviesmanager.model.Movie
+import com.ifsp.giovanna.moviesmanager.model.entity.Movie
 
 interface MovieDao {
     fun createMovie(contact: Movie): Int

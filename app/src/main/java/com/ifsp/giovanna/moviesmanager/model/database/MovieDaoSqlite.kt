@@ -6,7 +6,7 @@ import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.util.Log
 import com.ifsp.giovanna.moviesmanager.R
-import com.ifsp.giovanna.moviesmanager.model.Movie
+import com.ifsp.giovanna.moviesmanager.model.entity.Movie
 import com.ifsp.giovanna.moviesmanager.model.dao.MovieDao
 import java.sql.SQLException
 

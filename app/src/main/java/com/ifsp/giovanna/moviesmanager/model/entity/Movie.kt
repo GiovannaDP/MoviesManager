@@ -1,4 +1,4 @@
-package com.ifsp.giovanna.moviesmanager.model
+package com.ifsp.giovanna.moviesmanager.model.entity
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

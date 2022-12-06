@@ -1,6 +1,6 @@
-package com.ifsp.giovanna.moviesmanager
+package com.ifsp.giovanna.moviesmanager.controller
 
-import com.ifsp.giovanna.moviesmanager.model.Movie
+import com.ifsp.giovanna.moviesmanager.model.entity.Movie
 import com.ifsp.giovanna.moviesmanager.model.dao.MovieDao
 import com.ifsp.giovanna.moviesmanager.model.database.MovieDaoSqlite
 import com.ifsp.giovanna.moviesmanager.view.MainActivity
